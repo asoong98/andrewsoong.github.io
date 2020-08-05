@@ -1,94 +1,126 @@
 <!DOCTYPE HTML>
 <!--
-	Phantom by HTML5 UP
+	Massively by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
-		<title>Projects - Andrew Soong</title>
+		<title>Generic Page - Massively by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.container {
+				position: relative;
+				width: 100%;
+				overflow: hidden;
+				padding-top: 56.25%
+			}
+			
+			.responsive-iframe{
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				width: 100%;
+				height: 100%;
+				border: none;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Header -->
 					<header id="header">
-						<div class="inner">
-
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
-
-						</div>
+						<a href="index.html" class="logo">Andrew Soong</a>
 					</header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="My Projects.html">My Projects</a></li>
-							<li><a href="Previous Internships.html">Previous Internships</a></li>
+							<li><a href="Internships.html">Internships</a></li>
 							<li><a href="Education.html">Education</a></li>
-							<li><a href="Extras.html">Extras</a></li>
-							<li><a href="elements.html">Elements</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/andrew-soong/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
 						</ul>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
-						<div class="inner">
-							<h1>My Projects</h1>
-							<hr />
+						<h1>My Projects</h1>
+						<!-- Post -->
+							<section class="post">
+								<h3>Basil Leaf Automation<br />Senior Capstone Project</h3>
+								<h4>September 2019 - June 2020</h4>
+								<p>Recent population and wage increases have forced farmers to grow more food without a proportionate increase in work force. Automation is a key factor in reducing cost and increasing efficiency. In this paper, we explore our automation solution that utilizes position manipulation and vision processing to identify, pick up, and drop a leaf into a can. Two stepper motors and a linear actuator drove the three-dimensional actuation. Leaf and can recognition were accomplished through edge detection and machine learning algorithms. Testing proved subsystem-level functionality and proof of concept of a delicate autonomous pick-and-place robot. </p>
+								
+								<div class="container">
+									<iframe class="responsive-iframe" src="https://docs.google.com/presentation/d/e/2PACX-1vTQ5F5vF2KqByTEjPAZ9KLcovRzQ913vMRMlhEye2058XPW4hfVkymHRetR5PXwdv3RYjnhRZqEOfyc/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>							
+								</div>
+								
+								<p></p>
+								
+								<div class="container">	
+									<iframe class="responsive-iframe" src="https://www.youtube.com/embed/6nvGUoqyq1k" frameborder="0" width="1008" height="567" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+								
+								<p>For my senior capstone project at Santa Clara University, I, along with 6 other engineering students, spent 9 months designing and fabricating a robot that plays a small role in alleviating this labor shortage.</p>
+								<p>At Stanislaus Food Products, much of their tomato sauce packaging facilities is automated, with the exception of a seemingly simple task. The act of moving basil leaves from baskets to tomato sauce cans. This task, which is simple for humans, requires a level of precision and dexterity that isn't typically found in automated robots. This robot utilizes computer vision to locate basil leaves and tomato sauce cans and takes advantage of precise electromechanical movement to efficiently automate the placement of basil leaves.</p>
+								<p>My role on this team can be described as a Mechatronics Engineer. I spent most of my time writing code in Python to control the stepper motors used for precise movement and vacuum pump for the suction gripper. I also oversaw the integration between the Machine Learning algorithms and the hardware of the robot. </p>
+								<p>Some of my direct contributions included:</p>
+								
+								<div class="col-6"></div>
+									<ul>
+										<li>Designed a frame for the robot in <u>SolidWorks</u></li>
+										<li>Rapidly prototyped of various nozzle shapes for the suction gripper using 3D printing</li>
+										<li>Developed a stepper motor class for easy implementation of movement on a Raspberry Pi</li>
+										<li>Wired limit switches, stepper motors, and a vacuum pump to control all necessary electromechanical actuation</li>
+									</ul>
+								<p>I'm currently dedicating my time to further exploring possible Computer Vision and Machine Learning techniques to improve the recognition and classification of Basil Leaves using cameras. Some of these techniques include using <u>OpenCV</u> to find the centroid of the basil leaves. I also used <u>Principal Component Analysis</u> and utilized <u>Sklearn</u> to deploy <u>Linear and Quadratic Discriminant Analysis</u> models that correctly differentiate fresh leaves from rotten leaves with an accuracy of 73%.</p>
+								<p><a href="https://scholarcommons.scu.edu/idp_senior/61">Here</a> is a link to our full thesis.</p>
+							</section>
 							
-							<h3>Basil Leaf Automation - Senior Capstone Project</h3>
-							<h4>September 2019 - June 2020</h4>
-							<p>Recent population and wage increases have forced farmers to grow more food without a proportionate increase in work force. Automation is a key factor in reducing cost and increasing efficiency. In this paper, we explore our automation solution that utilizes position manipulation and vision processing to identify, pick up, and drop a leaf into a can. Two stepper motors and a linear actuator drove the three-dimensional actuation. Leaf and can recognition were accomplished through edge detection and machine learning algorithms. Testing proved subsystem-level functionality and proof of concept of a delicate autonomous pick-and-place robot. For my senior capstone project at Santa Clara University, I, along with 6 other engineering students, spent 9 months designing and fabricating a robot that plays a small role in alleviating this labor shortage.</p>
-							<p>At Stanislaus Food Products, much of their tomato sauce packaging facilities is automated, with the exception of a seemingly simple task. The act of moving basil leaves from baskets to tomato sauce cans. This task, which is simple for humans, requires a level of precision and dexterity that isn't typically found in automated robots. This robot utilizes computer vision to locate basil leaves and tomato sauce cans and takes advantage of precise electromechanical movement to efficiently automate the placement of basil leaves.</p>
-							<p>My role on this team can be described as a Mechatronics Engineer. I spent most of my time writing code in Python to control the stepper motors used for precise movement and vacuum pump for the suction gripper. I also oversaw the integration between the Machine Learning algorithms and the hardware of the robot. </p>
-							<p>Some of my direct contributions included:</p>
-							<div class="col-md"></div>
-								<ul>
-									<li>Designed a frame for the robot in <u>SolidWorks</u></li>
-									<li>Rapidly prototyped of various nozzle shapes for the suction gripper using 3D printing</li>
-									<li>Developed a stepper motor class for easy implementation of movement on a Raspberry Pi</li>
-									<li>Wired limit switches, stepper motors, and a vacuum pump to control all necessary electromechanical actuation</li>
-								</ul>
-							<p>I'm currently dedicating my time to further exploring possible Computer Vision and Machine Learning techniques to improve the recognition and classification of Basil Leaves using cameras. Some of these techniques include using <u>OpenCV</u> to find the centroid of the basil leaves. I also used <u>Principal Component Analysis</u> and utilized <u>Sklearn</u> to deploy <u>Linear and Quadratic Discriminant Analysis</u> models that correctly differentiate fresh leaves from rotten leaves with an accuracy of 73%.</p>
-							<p><a href="https://scholarcommons.scu.edu/idp_senior/61">Here</a> is a link to our full thesis.</p>
-							<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTQ5F5vF2KqByTEjPAZ9KLcovRzQ913vMRMlhEye2058XPW4hfVkymHRetR5PXwdv3RYjnhRZqEOfyc/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>							
-							<iframe width="1008" height="567" src="https://www.youtube.com/embed/6nvGUoqyq1k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</div>
+						<!-- Footer -->
+							<footer id = "footer">
+								<section class="split contact">
+									<section>
+										<h3>Phone</h3>
+										<p>(408) 888-0394</a></p>
+									</section>
+									<section>
+										<h3>Email</h3>
+										<p>asoong@umich.edu</a></p>
+									</section>
+									<section>
+										<h3>Social</h3>
+										<ul class="icons alt">
+											<li><a href="https://www.linkedin.com/in/andrew-soong/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+										</ul>
+									</section>
+								</section>
+							</footer>
 					</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2>Contact</h2>
-								<ul class="icons">
-									<li><a href="#" class="icon brands style2 fa-linkedin"><span class="label">Twitter</span></a></li>
-								</ul>
-								<p>asoong@umich.edu | 408-888-0394</p>
-							</section>
-							<ul class="copyright">
-								<li>&copy; Andrew Soong. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
 
 			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
